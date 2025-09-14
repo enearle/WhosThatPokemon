@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MatchingPokimon</title>
+    <link rel="stylesheet" href="flipcards.css">
+</head>
+
+
+<body>
+<!--Just using an image to instead of using a rando ttf-->
+<header id="header">
+    <img id="header-image" src="who.png" alt="Who's that Pokemon?">
+</header>
+<div id="score-container">
+    <span>
+        <h2 id="subheader">Time: </h2>
+        <h2 id="time"></h2>
+    </span>
+    <span>
+        <input class="hard" type="checkbox" id="hard-mode" value="hard">
+        <label class="hard" for="hard-mode">Hard Mode</label>
+    </span>
+
+</div>
+
+
+<main>
+    <div id="flip-card-container"></div>
+    <script src="utility.js"></script>
+    <script src="timer.js"></script>
+    <script src="gamecore.js"></script>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            main();
+        });
+    </script>
+</main>
+</body>
+</html>
